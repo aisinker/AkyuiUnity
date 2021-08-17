@@ -333,12 +333,12 @@ namespace AkyuiUnity.Editor
         private readonly IAkyuiImportTrigger[] _triggers;
         private readonly Dictionary<string, string> _assetNameToExistedAssetPath;
 
-        public EditorAssetLoader(PathGetter pathGetter, AkyuiLogger logger, IAkyuiImportTrigger[] triggers, Dictionary<string, string> assetAssetNameToExistedAssetExistedAssetPath = null)
+        public EditorAssetLoader(PathGetter pathGetter, AkyuiLogger logger, IAkyuiImportTrigger[] triggers, Dictionary<string, string> assetNameToExistedAssetPath = null)
         {
             _pathGetter = pathGetter;
             _logger = logger;
             _triggers = triggers;
-            _assetNameToExistedAssetPath = assetAssetNameToExistedAssetExistedAssetPath;
+            _assetNameToExistedAssetPath = assetNameToExistedAssetPath;
         }
 
         private string ConvertName(string fileName)
