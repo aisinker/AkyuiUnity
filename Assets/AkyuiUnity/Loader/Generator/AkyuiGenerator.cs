@@ -94,6 +94,10 @@ namespace AkyuiUnity.Generator
                     CreateComponent(assetLoader, gameObject, component, triggers);
                 }
 
+                foreach (var trigger in triggers)
+                {
+                    trigger.OnPostprocessGameObject(gameObject);
+                }
                 return gameObject;
             }
 

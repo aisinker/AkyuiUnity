@@ -382,6 +382,10 @@ namespace AkyuiUnity.Generator.InternalTrigger
             }
         }
 
+        public void OnPostprocessGameObject(GameObject gameObject)
+        {
+        }
+
         public void OnPostprocessComponent(GameObject gameObject, IComponent component)
         {
         }

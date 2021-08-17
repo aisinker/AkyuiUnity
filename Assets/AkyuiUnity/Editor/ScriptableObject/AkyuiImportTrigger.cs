@@ -28,6 +28,9 @@ namespace AkyuiUnity.Editor.ScriptableObject
         public virtual void OnPostprocessAllAssets(IAkyuiLoader loader, Object[] importAssets) { }
 
         public virtual Component CreateComponent(GameObject gameObject, IComponent component, IAssetLoader assetLoader) => null;
+
+        public virtual void OnPostprocessGameObject(GameObject gameObject) { }
+
         public virtual void OnPostprocessComponent(GameObject gameObject, IComponent component) { }
 
         public virtual string OnLoadAsset(string fileName) => null;
