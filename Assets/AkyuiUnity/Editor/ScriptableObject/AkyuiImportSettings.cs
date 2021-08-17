@@ -18,6 +18,9 @@ namespace AkyuiUnity.Editor.ScriptableObject
 
         public string FontDirectoryPath => fontDirectoryPath;
         [SerializeField] private string fontDirectoryPath = "Assets/Fonts/";
+        
+        public string TextureDirectoryPath => textureDirectoryPath;
+        [SerializeField] private string textureDirectoryPath = "Assets/Textures/";
 
         public Preset TexturePreset => texturePreset;
         [SerializeField] private Preset texturePreset = default;
@@ -41,6 +44,7 @@ namespace AkyuiUnity.Editor.ScriptableObject
         string AssetOutputDirectoryPath { get; }
         string MetaOutputPath { get; }
         string FontDirectoryPath { get; }
+        string TextureDirectoryPath { get; }
         Preset TexturePreset { get; }
         IAkyuiImportTrigger[] Triggers { get; }
         float SpriteSaveScale { get; }
